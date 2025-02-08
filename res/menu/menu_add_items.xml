@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_descripcion" android:title="Descripción"/>
+    <item android:id="@+id/menu_materiales" android:title="Materiales"/>
+    <item android:id="@+id/menu_enlaces" android:title="Enlaces"/>
+    <item android:id="@+id/menu_imagenes" android:title="Planos"/>
+
+</menu>

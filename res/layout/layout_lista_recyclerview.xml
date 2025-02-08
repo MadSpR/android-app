@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="proyecto"
+            type="com.gestorproyectos_v01.modelos.Proyecto" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/campo_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:layout_marginTop="10dp"
+            android:text="@{proyecto.descripcion_proyecto}"
+            android:typeface="monospace" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="50dp"
+            />
+
+    </FrameLayout>
+
+</layout>

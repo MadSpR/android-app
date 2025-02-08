@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="proyecto"
+            type="com.gestorproyectos_v01.modelos.Proyecto" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_nombre_proy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@{proyecto.nombre_proyecto}"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:typeface="monospace" />
+            <TextView
+                android:id="@+id/txt_descripcion_proy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_nombre_proy"
+                android:fontFamily="monospace"
+                android:layout_marginTop="10dp"
+                android:maxLines="3"
+                android:text="@{proyecto.descripcion_proyecto}"
+                android:typeface="monospace" />
+
+            <View
+                android:id="@+id/separador"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/txt_descripcion_proy"
+                android:layout_marginTop="15dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_is_pendiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separador"
+                android:fontFamily="monospace"
+                android:layout_marginTop="10dp"
+                android:typeface="monospace" />
+
+        </RelativeLayout>
+    
+</androidx.cardview.widget.CardView>
+</layout>

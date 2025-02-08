@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".activities.AddProyectoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Añadir Proyecto"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nombre proyecto"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/proy_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Descripción proyecto"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/proy_descripcion_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine|textLongMessage"/>
+
+        <Button
+            android:id="@+id/btn_add_proy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir"
+            android:onClick="addProyectos"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

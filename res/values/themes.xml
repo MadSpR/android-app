@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GestorProyectos_v01" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/green</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Tema pantalla splash -->
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/green</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Tema login -->
+    <style name="LoginTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/dark_green</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="BottomNavigationStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        
+        <item name="android:background">@color/green</item>
+        <item name="itemIconTint">@color/green</item>
+        <item name="itemTextColor">@color/green</item>
+        
+    </style>
+
+    <style name="CalendarTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="FragmentsTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/green</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/green</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+
+        <!-- Gets rid of the "underline" in the text -->
+        <item name="queryBackground">@color/white</item>
+        <!-- Gets rid of the search icon when the SearchView is expanded -->
+        <item name="searchHintIcon">@null</item>
+        <!-- The hint text that appears when the user has not typed anything -->
+        <item name="queryHint">@string/search_hint</item>
+    </style>
+
+    <string name="search_hint">Buscar...</string>
+</resources>
